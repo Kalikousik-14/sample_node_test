@@ -3,8 +3,7 @@ const app = express();
 app.use(express.json());
 
 app.post('/check', (req, res) => {
-    const formData = req.body.formData;
-    console.log(formData);
+    console.log('its working');
     // Save formData to the database
     res.sendStatus(200);
   });
